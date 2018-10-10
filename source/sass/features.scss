@@ -1,0 +1,20 @@
+.features {
+  margin-bottom: 42px;
+}
+
+.features__title {
+  @include title-style();
+  margin-bottom: 35px;
+}
+
+.features__list {
+  @include list-style-reset();
+}
+
+.features__item {
+  font-family: $arial-font;
+
+  &:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}

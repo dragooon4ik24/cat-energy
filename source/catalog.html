@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Cat Energy: Каталог продукции</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -12,9 +13,9 @@
     <nav class="page-header__navigation main-navigation">
       <button class="main-navigation__toggle" type="button">Открыть меню</button>
       <ul class="main-navigation__list">
-        <li class="main-navigation__item"><a href="index.html">Главная</a></li>
-        <li class="main-navigation__item"><a>Каталог продукции</a></li>
-        <li class="main-navigation__item"><a href="form.html">Подбор программы</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="index.html">Главная</a></li>
+        <li class="main-navigation__item main-navigation__item--current"><a class="main-navigation__link main-navigation__link--current">Каталог продукции</a></li>
+        <li class="main-navigation__item"><a class="main-navigation__link" href="form.html">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
@@ -33,15 +34,15 @@
                 <table class="catalog-item__table">
                   <tr>
                     <td>Объем</td>
-                    <td>500 г</td>
+                    <td class="catalog-item__second-column">500 г</td>
                   </tr>
                   <tr>
                     <td>Вкус</td>
-                    <td>Курица</td>
+                    <td class="catalog-item__second-column">Курица</td>
                   </tr>
                   <tr>
                     <td>Цена</td>
-                    <td>700 р.</td>
+                    <td class="catalog-item__second-column">700 р.</td>
                   </tr>
                 </table>
               </figcaption>
@@ -58,15 +59,15 @@
                 <table class="catalog-item__table">
                   <tr>
                     <td>Объем</td>
-                    <td>1000г</td>
+                    <td class="catalog-item__second-column">1000г</td>
                   </tr>
                   <tr>
                     <td>Вкус</td>
-                    <td>Курица</td>
+                    <td class="catalog-item__second-column">Курица</td>
                   </tr>
                   <tr>
                     <td>Цена</td>
-                    <td>1000 р.</td>
+                    <td class="catalog-item__second-column">1000 р.</td>
                   </tr>
                 </table>
               </figcaption>
@@ -83,15 +84,15 @@
                 <table class="catalog-item__table">
                   <tr>
                     <td>Объем</td>
-                    <td>500 г</td>
+                    <td class="catalog-item__second-column">500 г</td>
                   </tr>
                   <tr>
                     <td>Вкус</td>
-                    <td>Рыба</td>
+                    <td class="catalog-item__second-column">Рыба</td>
                   </tr>
                   <tr>
                     <td>Цена</td>
-                    <td>700 р.</td>
+                    <td class="catalog-item__second-column">700 р.</td>
                   </tr>
                 </table>
               </figcaption>
@@ -108,15 +109,15 @@
                 <table class="catalog-item__table">
                   <tr>
                     <td>Объем</td>
-                    <td>1000г</td>
+                    <td class="catalog-item__second-column">1000г</td>
                   </tr>
                   <tr>
                     <td>Вкус</td>
-                    <td>Рыба</td>
+                    <td class="catalog-item__second-column">Рыба</td>
                   </tr>
                   <tr>
                     <td>Цена</td>
-                    <td>1000 р.</td>
+                    <td class="catalog-item__second-column">1000 р.</td>
                   </tr>
                 </table>
               </figcaption>
@@ -133,15 +134,15 @@
                 <table class="catalog-item__table">
                   <tr>
                     <td>Объем</td>
-                    <td>500 г</td>
+                    <td class="catalog-item__second-column">500 г</td>
                   </tr>
                   <tr>
                     <td>Вкус</td>
-                    <td>Гречка</td>
+                    <td class="catalog-item__second-column">Гречка</td>
                   </tr>
                   <tr>
                     <td>Цена</td>
-                    <td>400 р.</td>
+                    <td class="catalog-item__second-column">400 р.</td>
                   </tr>
                 </table>
               </figcaption>
@@ -158,15 +159,15 @@
                 <table class="catalog-item__table">
                   <tr>
                     <td>Объем</td>
-                    <td>1000 г</td>
+                    <td class="catalog-item__second-column">1000 г</td>
                   </tr>
                   <tr>
                     <td>Вкус</td>
-                    <td>Гречка</td>
+                    <td class="catalog-item__second-column">Гречка</td>
                   </tr>
                   <tr>
                     <td>Цена</td>
-                    <td>700 р.</td>
+                    <td class="catalog-item__second-column">700 р.</td>
                   </tr>
                 </table>
               </figcaption>
@@ -183,15 +184,15 @@
                 <table class="catalog-item__table">
                   <tr>
                     <td>Объем</td>
-                    <td>500 г</td>
+                    <td class="catalog-item__second-column">500 г</td>
                   </tr>
                   <tr>
                     <td>Вкус</td>
-                    <td>Рис</td>
+                    <td class="catalog-item__second-column">Рис</td>
                   </tr>
                   <tr>
                     <td>Цена</td>
-                    <td>500 р.</td>
+                    <td class="catalog-item__second-column">500 р.</td>
                   </tr>
                 </table>
               </figcaption>
@@ -202,7 +203,7 @@
         <li class="product-list__item">
           <p class="product-list__show-all">Показать еще 100500 товаров</p>
           <p class="product-list__text">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="product-list__button site-button site-button--grey">Показать все</a>
+          <a href="#" class="product-list__button site-button site-button--gray">Показать все</a>
         </li>
       </ul>
     </section>
@@ -214,7 +215,7 @@
           <table class="extra-list__information">
             <tr>
               <td>1 упаковка (100 г)</td>
-              <td>100 р.</td>
+              <td class="extra-list__right-column">100 р.</td>
             </tr>
           </table>
           <a href="#" class="extra-list__order site-button">Заказать</a>
@@ -224,7 +225,7 @@
           <table class="extra-list__information">
             <tr>
               <td>5 литров</td>
-              <td>50 р.</td>
+              <td class="extra-list__right-column">50 р.</td>
             </tr>
           </table>
           <a href="#" class="extra-list__order site-button">Заказать</a>
@@ -234,7 +235,7 @@
           <table class="extra-list__information">
             <tr>
               <td>1 литр</td>
-              <td>100 р.</td>
+              <td class="extra-list__right-column">100 р.</td>
             </tr>
           </table>
           <a href="#" class="extra-list__order site-button">Заказать</a>
@@ -244,7 +245,7 @@
           <table class="extra-list__information">
             <tr>
               <td>1 упаковка (30г)</td>
-              <td>300 р.</td>
+              <td class="extra-list__right-column">300 р.</td>
             </tr>
           </table>
           <a href="#" class="extra-list__order site-button">Заказать</a>
@@ -254,26 +255,26 @@
         <p class="extra-catalog__case">Закажите все и получите чехол для кота в подарок!</p>
       </div>
     </section>
-    <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
-        <div class="contacts__wrapper">
-          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
-          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        </div>
-        <img class="contacts__map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта с адресом: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </div>
-        <a class="page-footer__logo" href="index.html">Cat Energy</a>
-        <ul class="page-footer__socials socials">
-          <li class="socials__link"><a href="#">Вконтакте</a></li>
-          <li class="socials__link"><a href="#">Инстаграм</a></li>
-          <li class="socials__link"><a href="#">Фейсбук</a></li>
-        </ul>
-        <div class="page-footer__copyright copyright">
-          <p class="copyright__text">HTML Academy</p>
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
-        </div>
-    </footer>
   </main>
+  <footer class="page-footer">
+    <div class="page-footer__contacts contacts">
+      <div class="contacts__wrapper">
+        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </div>
+      <img class="contacts__map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта с адресом: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </div>
+      <a class="page-footer__logo" href="index.html">Cat Energy</a>
+      <ul class="page-footer__socials socials">
+        <li class="socials__link"><a href="#">Вконтакте</a></li>
+        <li class="socials__link"><a href="#">Инстаграм</a></li>
+        <li class="socials__link"><a href="#">Фейсбук</a></li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <p class="copyright__text">HTML Academy</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      </div>
+  </footer>
 </body>
 
 </html>

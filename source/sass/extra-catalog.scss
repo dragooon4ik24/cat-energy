@@ -1,0 +1,34 @@
+.extra-catalog {
+  margin-bottom: 35px;
+}
+
+.extra-catalog__list {
+  margin-bottom: 39px;
+}
+
+.extra-catalog__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 24px;
+}
+
+.extra-catalog__gift {
+  min-height: 289px;
+
+  background-color: $green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.extra-catalog__case {
+  margin: 0;
+  padding-top: 190px;
+
+  font-family: $arial-font;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}

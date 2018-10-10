@@ -1,0 +1,49 @@
+@import "normalize.scss";
+@import "fonts.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "main-navigation.scss";
+@import "main-header.scss";
+@import "choose-program.scss";
+@import "list-program.scss";
+@import "features.scss";
+@import "example.scss";
+@import "range.scss";
+@import "page-footer.scss";
+@import "contacts.scss";
+@import "socials.scss";
+@import "copyright.scss";
+@import "main-catalog.scss";
+@import "product-list.scss";
+@import "catalog-item.scss";
+@import "extra-list.scss";
+@import "extra-catalog.scss";
+@import "program-selection.scss";
+@import "form.scss";
+@import "site-button.scss";
+
+body {
+  width: 320px;
+
+  font-family: $default-font;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

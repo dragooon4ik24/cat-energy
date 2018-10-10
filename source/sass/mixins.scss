@@ -1,0 +1,12 @@
+@mixin list-style-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin title-style {
+  margin: 0;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 60px;
+}

@@ -1,0 +1,21 @@
+.catalog-item__title {
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-item__table {
+  width: 140px;
+
+  font-family: $arial-font;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.catalog-item__second-column {
+  text-align: right;
+}
+
+.catalog-item__order {
+  margin-bottom: 24px;
+}

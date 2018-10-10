@@ -1,0 +1,35 @@
+.example {
+  margin-bottom: 30px;
+
+  background-color: $gray--light;
+}
+
+.example__title {
+  @include title-style();
+}
+
+.example__text {
+  margin: 0;
+  font-family: $arial-font;
+}
+
+.example__weight,
+.example__days {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.example__weight-detailed,
+.example__days-detailed {
+  font-family: $arial-font;
+  text-transform: lowercase;
+}
+
+.example__cost {
+  margin: 0;
+
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}

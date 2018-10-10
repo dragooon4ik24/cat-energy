@@ -1,0 +1,30 @@
+.main-header {
+  background-color: $green;
+  background-image: url("../img/index-background-mobile@1x.jpg");
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+
+.main-header__title {
+  margin: 0;
+  padding-top: 25px;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-bottom: 20px;
+
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-header__description {
+  margin: 0;
+  padding-bottom: 25px;
+
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
