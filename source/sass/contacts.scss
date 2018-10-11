@@ -1,6 +1,6 @@
 .contacts {
   &--white {
-    background-color: #ffffff;
+    background-color: $white;
   }
 }
 
@@ -15,6 +15,6 @@
 .contacts__address {
   margin: 0;
 
-  font-family: $arial-font;
+  font-family: $secondary-font;
   line-height: 20px;
 }

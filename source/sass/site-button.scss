@@ -1,5 +1,6 @@
 .site-button {
   display: block;
+  box-sizing: border-box;
   width: 100%;
   padding-top: 12px;
   padding-right: 10px;
@@ -8,29 +9,29 @@
 
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: $white;
 
-  background-color: $green;
+  background-color: $button-green-color;
 
   &:hover {
-    background-color: $green--dark;
+    background-color: $button-green-color--hover;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: $white--transparent;
   }
 
   &--gray {
-    color: #000000;
+    color: $black;
 
-    background-color: $gray--light;
+    background-color: $button-gray-color;
 
     &:hover {
-      background-color: #ebebeb;
+      background-color: $button-gray-color--hover;
     }
 
     &:active {
-      color: rgba(0, 0, 0, 0.3);
+      color: $black--transparent;
     }
   }
 }

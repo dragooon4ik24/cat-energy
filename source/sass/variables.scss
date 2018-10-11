@@ -1,7 +1,21 @@
 $default-font: "Oswald", "Arial", sans-serif;
-$arial-font: "Arial", sans-serif;
+$secondary-font: "Arial", sans-serif;
 
-$gray: #e6e6e6;
-$gray--light: #f2f2f2;
+$white: #ffffff;
+$white--transparent: rgba(255, 255, 255, 0.3);
+$black: #000000;
+$black--transparent: rgba(0, 0, 0, 0.3);
+$gray: #f2f2f2;
 $green: #68b738;
 $green--dark: #5eaa2f;
+$border-color: #cdcdcd;
+$input-color: rgba(205, 205, 205, 0.5);
+$input-color--hover: $border-color;
+$input-color--focus: #444444;
+$input-color--invalid: #ff8282;
+$button-gray-color: $gray;
+$button-gray-color--hover: #ebebeb;
+$button-green-color: $green;
+$button-green-color--hover: $green--dark;
+$border-color--menu: #e6e6e6;
+$border-color--catalog: #ededed;

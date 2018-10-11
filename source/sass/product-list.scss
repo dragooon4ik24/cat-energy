@@ -3,7 +3,7 @@
 }
 
 .product-list__item {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid $border-color--catalog;
 }
 
 .product-list__show-all {
@@ -13,7 +13,7 @@
 }
 
 .product-list__text {
-  font-family: $arial-font;
+  font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
   text-align: center;

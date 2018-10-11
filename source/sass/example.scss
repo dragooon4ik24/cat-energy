@@ -1,7 +1,7 @@
 .example {
   margin-bottom: 30px;
 
-  background-color: $gray--light;
+  background-color: $gray;
 }
 
 .example__title {
@@ -10,7 +10,7 @@
 
 .example__text {
   margin: 0;
-  font-family: $arial-font;
+  font-family: $secondary-font;
 }
 
 .example__weight,
@@ -22,7 +22,7 @@
 
 .example__weight-detailed,
 .example__days-detailed {
-  font-family: $arial-font;
+  font-family: $secondary-font;
   text-transform: lowercase;
 }
 
