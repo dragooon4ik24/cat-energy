@@ -1,0 +1,9 @@
+.program-selection__title {
+  @include title-style();
+}
+
+.program-selection__instruction {
+  margin: 0;
+
+  text-transform: uppercase;
+}

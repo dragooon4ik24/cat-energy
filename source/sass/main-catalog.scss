@@ -1,0 +1,7 @@
+.main-catalog {
+  margin-bottom: 30px;
+}
+
+.main-catalog__title {
+  @include title-style();
+}

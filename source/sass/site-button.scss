@@ -1,0 +1,37 @@
+.site-button {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 12px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+
+  background-color: $button-green-color;
+
+  &:hover {
+    background-color: $button-green-color--hover;
+  }
+
+  &:active {
+    color: $white--transparent;
+  }
+
+  &--gray {
+    color: $black;
+
+    background-color: $button-gray-color;
+
+    &:hover {
+      background-color: $button-gray-color--hover;
+    }
+
+    &:active {
+      color: $black--transparent;
+    }
+  }
+}

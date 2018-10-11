@@ -1,0 +1,24 @@
+.product-list {
+  @include list-style-reset();
+}
+
+.product-list__item {
+  border-bottom: 1px solid $border-color--catalog;
+}
+
+.product-list__show-all {
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product-list__text {
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+.product-list__button {
+  margin-bottom: 24px;
+}
