@@ -1,0 +1,24 @@
+.container-form {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .container-form {
+    width: 630px;
+    margin: 0 auto;
+    padding-left: 71px;
+    padding-right: 67px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container-form {
+    display: flex;
+    width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cat Energy: Каталог продукции</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,7 +21,7 @@
     </nav>
   </header>
   <main class="page-main">
-    <section class="main-catalog">
+    <section class="main-catalog container">
       <h1 class="main-catalog__title">Каталог продукции</h1>
       <ul class="main-catalog__list product-list">
         <li class="product-list__item">
@@ -201,78 +202,92 @@
           </article>
         </li>
         <li class="product-list__item">
-          <p class="product-list__show-all">Показать еще 100500 товаров</p>
-          <p class="product-list__text">На самом деле вкусов гораздо больше!</p>
-          <a href="#" class="product-list__button site-button site-button--gray">Показать все</a>
+          <article class="product-list__article catalog-item catalog-item--show-more">
+            <p class="catalog-item__show-more">Показать еще 100500 товаров</p>
+            <p class="catalog-item__text">На самом деле вкусов гораздо больше!</p>
+            <a href="#" class="catalog-item__order site-button site-button--gray">Показать все</a>
+          </article>
         </li>
       </ul>
     </section>
     <section class="extra-catalog">
       <h2 class="extra-catalog__title">Дополнительные товары</h2>
-      <ul class="extra-catalog__list extra-list">
-        <li class="extra-list__item">
-          <p class="extra-list__name">Сахарозаменитель</p>
-          <table class="extra-list__information">
-            <tr>
-              <td>1 упаковка (100 г)</td>
-              <td class="extra-list__right-column">100 р.</td>
-            </tr>
-          </table>
-          <a href="#" class="extra-list__order site-button">Заказать</a>
-        </li>
-        <li class="extra-list__item">
-          <p class="extra-list__name">Питьевая вода</p>
-          <table class="extra-list__information">
-            <tr>
-              <td>5 литров</td>
-              <td class="extra-list__right-column">50 р.</td>
-            </tr>
-          </table>
-          <a href="#" class="extra-list__order site-button">Заказать</a>
-        </li>
-        <li class="extra-list__item">
-          <p class="extra-list__name">Молоко</p>
-          <table class="extra-list__information">
-            <tr>
-              <td>1 литр</td>
-              <td class="extra-list__right-column">100 р.</td>
-            </tr>
-          </table>
-          <a href="#" class="extra-list__order site-button">Заказать</a>
-        </li>
-        <li class="extra-list__item">
-          <p class="extra-list__name">Витамины</p>
-          <table class="extra-list__information">
-            <tr>
-              <td>1 упаковка (30г)</td>
-              <td class="extra-list__right-column">300 р.</td>
-            </tr>
-          </table>
-          <a href="#" class="extra-list__order site-button">Заказать</a>
-        </li>
-      </ul>
-      <div class="extra-catalog__gift">
-        <p class="extra-catalog__case">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="container">
+        <ul class="extra-catalog__list extra-list">
+          <li class="extra-list__item">
+            <div class="extra-list__wrapper">
+              <p class="extra-list__name">Сахарозаменитель</p>
+              <table class="extra-list__information">
+                <tr>
+                  <td>1 упаковка (100 г)</td>
+                  <td class="extra-list__right-column">100 р.</td>
+                </tr>
+              </table>
+            </div>
+            <a href="#" class="extra-list__order site-button">Заказать</a>
+          </li>
+          <li class="extra-list__item">
+            <div class="extra-list__wrapper">
+              <p class="extra-list__name">Питьевая вода</p>
+              <table class="extra-list__information">
+                <tr>
+                  <td>5 литров</td>
+                  <td class="extra-list__right-column">50 р.</td>
+                </tr>
+              </table>
+            </div>
+            <a href="#" class="extra-list__order site-button">Заказать</a>
+          </li>
+          <li class="extra-list__item">
+            <div class="extra-list__wrapper">
+              <p class="extra-list__name">Молоко</p>
+              <table class="extra-list__information">
+                <tr>
+                  <td>1 литр</td>
+                  <td class="extra-list__right-column">100 р.</td>
+                </tr>
+              </table>
+            </div>
+            <a href="#" class="extra-list__order site-button">Заказать</a>
+          </li>
+          <li class="extra-list__item">
+            <div class="extra-list__wrapper">
+              <p class="extra-list__name">Витамины</p>
+              <table class="extra-list__information">
+                <tr>
+                  <td>1 упаковка (30г)</td>
+                  <td class="extra-list__right-column">300 р.</td>
+                </tr>
+              </table>
+            </div>
+            <a href="#" class="extra-list__order site-button">Заказать</a>
+          </li>
+        </ul>
+        <div class="extra-catalog__gift">
+          <p class="extra-catalog__case">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__contacts contacts">
       <div class="contacts__wrapper">
-        <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+        <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <img class="contacts__map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта с адресом: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      </div>
+      <div class="container">
+        <a class="page-footer__logo">Cat Energy</a>
+        <ul class="page-footer__socials socials">
+          <li class="socials__link"><a href="#">Вконтакте</a></li>
+          <li class="socials__link"><a href="#">Инстаграм</a></li>
+          <li class="socials__link"><a href="#">Фейсбук</a></li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
         </div>
-      <a class="page-footer__logo" href="index.html">Cat Energy</a>
-      <ul class="page-footer__socials socials">
-        <li class="socials__link"><a href="#">Вконтакте</a></li>
-        <li class="socials__link"><a href="#">Инстаграм</a></li>
-        <li class="socials__link"><a href="#">Фейсбук</a></li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">HTML Academy</p>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
       </div>
   </footer>
 </body>

@@ -26,3 +26,40 @@
 .extra-list__right-column {
   text-align: right;
 }
+
+@media (min-width: $tablet-width) {
+  .extra-list__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra-list__information {
+    text-align: right;
+  }
+
+  .extra-list__right-column {
+    width: 95px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-list__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .extra-list__wrapper {
+    width: 100%;
+  }
+
+  .extra-list__order {
+    width: 245px;
+  }
+
+  .extra-list__information {
+    width: 245px;
+
+    text-align: left;
+  }
+}

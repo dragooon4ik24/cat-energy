@@ -1,6 +1,7 @@
 .main-header {
-  background-color: $green;
-  background-image: url("../img/index-background-mobile@1x.jpg");
+  margin-bottom: 22px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to bottom, $green 305px, $white 305px);
   background-position: center 0;
   background-repeat: no-repeat;
 }
@@ -27,4 +28,43 @@
   text-align: center;
   text-transform: uppercase;
   color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    position: relative;
+
+    background-image: none;
+    background-color: $white;
+  }
+
+  .main-header .container {
+    padding-left: 120px;
+  }
+
+  .main-header__title,
+  .main-header__description {
+    text-align: left;
+    color: $black;
+  }
+
+  .main-header__title {
+    width: 430px;
+    padding-left: 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .main-header__description {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-header__button {
+    position: absolute;
+    bottom: 230px;
+    box-sizing: border-box;
+    width: 245px;
+  }
 }

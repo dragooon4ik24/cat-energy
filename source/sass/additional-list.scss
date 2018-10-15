@@ -1,0 +1,15 @@
+@media (min-width: $tablet-width) {
+  .additional-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .additional-list__item {
+    width: 285px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  width: 245px;
+}

@@ -1,3 +1,11 @@
+.main-navigation {
+  position: relative;
+}
+
+.main-navigation__toggle {
+  position: absolute;
+}
+
 .main-navigation__list {
   @include list-style-reset();
 
@@ -10,9 +18,7 @@
 
 .main-navigation__item {
   padding-top: 23px;
-  padding-right: 20px;
   padding-bottom: 22px;
-  padding-left: 20px;
 
   border-bottom: 1px solid $border-color--menu;
 }
@@ -38,5 +44,23 @@
     height: 2px;
 
     background-color: $green;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation__list {
+    display: flex;
+  }
+
+  .main-navigation__item {
+    border: none;
+
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 }
