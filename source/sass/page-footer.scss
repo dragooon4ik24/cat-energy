@@ -1,3 +1,16 @@
 .page-footer {
   background-color: $gray;
 }
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

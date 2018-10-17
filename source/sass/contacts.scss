@@ -5,6 +5,7 @@
 }
 
 .contacts__text {
+  width: 125px;
   margin: 0;
 
   font-size: 16px;
@@ -13,8 +14,44 @@
 }
 
 .contacts__address {
+  width: 140px;
   margin: 0;
 
   font-family: $secondary-font;
   line-height: 20px;
+}
+
+.contacts__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding-left: 40px;
+    padding-right: 42px;
+  }
+
+  .contacts__address {
+    width: 165px;
+
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts .container {
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    left: auto;
+
+    width: 570px;
+  }
+
+  .contacts__address {
+    text-align: left;
+  }
 }

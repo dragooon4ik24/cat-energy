@@ -9,4 +9,8 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 60px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }

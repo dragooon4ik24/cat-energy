@@ -1,0 +1,10 @@
+.page-header {
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
+}

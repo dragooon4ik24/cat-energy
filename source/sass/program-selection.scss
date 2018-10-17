@@ -4,6 +4,18 @@
 
 .program-selection__instruction {
   margin: 0;
-
+  padding-left: 41px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .program-selection__instruction {
+    padding-left: 41px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection__instruction {
+    padding-left: 0;
+  }
 }

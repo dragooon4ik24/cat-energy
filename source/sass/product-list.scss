@@ -3,22 +3,19 @@
 }
 
 .product-list__item {
+  display: flex;
+
   border-bottom: 1px solid $border-color--catalog;
 }
 
-.product-list__show-all {
-  line-height: 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
+@media (min-width: $tablet-width) {
+  .product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-.product-list__text {
-  font-family: $secondary-font;
-  font-size: 12px;
-  line-height: 16px;
-  text-align: center;
-}
-
-.product-list__button {
-  margin-bottom: 24px;
+  .product-list__item {
+    border: none;
+  }
 }
