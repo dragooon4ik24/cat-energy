@@ -63,7 +63,25 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form {
+    padding-left: 41px;
+  }
+
   .form__wrapper-submit {
     display: flex;
+  }
+
+  .form__submit {
+    width: 283px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    padding-left: 0;
+  }
+
+  .form__submit {
+    width: 568px;
   }
 }

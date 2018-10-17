@@ -9,10 +9,10 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header container">
     <a class="page-header__logo" href="index.html">Cat Energy</a>
-    <nav class="page-header__navigation main-navigation">
-      <button class="main-navigation__toggle" type="button">Открыть меню</button>
+    <nav class="page-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item"><a class="main-navigation__link" href="index.html">Главная</a></li>
         <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html">Каталог продукции</a></li>
@@ -20,12 +20,10 @@
       </ul>
     </nav>
   </header>
-  <main class="page-main">
+  <main class="page-main container">
     <section class="program-selection">
-      <div class="container">
-        <h1 class="program-selection__title">Подбор программы</h1>
-        <p class="program-selection__instruction">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      </div>
+      <h1 class="program-selection__title">Подбор программы</h1>
+      <p class="program-selection__instruction">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="program-selection__form form" action="https://echo.htmlacademy.ru">
         <div class="container-form">
           <fieldset class="form__fieldset">
@@ -74,13 +72,11 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Комментарий</legend>
-          <div class="container-form">
-            <textarea class="form__textarea" name="comment" id="user-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
+          <textarea class="form__textarea" name="comment" id="user-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Дополнительно</legend>
-          <ul class="form__list-extra additional-list container-form">
+          <ul class="form__list-extra additional-list">
             <li class="additional-list__item">
               <input type="checkbox" name="sugar-substitute" id="sugar-substitute" class="form__checkbox" checked>
               <label for="sugar-substitute" class="form__label">Сахарозаменитель</label>
@@ -99,7 +95,7 @@
             </li>
           </ul>
         </fieldset>
-        <div class="form__wrapper-submit container-form">
+        <div class="form__wrapper-submit">
           <button class="form__submit site-button" type="submit">Отправить заявку</button>
           <p class="form__comments">* - Обязательные поля</p>
         </div>
@@ -107,14 +103,16 @@
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__contacts contacts">
-      <div class="contacts__wrapper">
-        <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="page-footer__contacts contacts contacts--white">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
       <img class="contacts__map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта с адресом: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
-      <div class="container">
+      <div class="page-footer__container container">
         <a class="page-footer__logo">Cat Energy</a>
         <ul class="page-footer__socials socials">
           <li class="socials__link"><a href="#">Вконтакте</a></li>
@@ -127,6 +125,7 @@
         </div>
       </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

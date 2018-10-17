@@ -15,12 +15,14 @@
 }
 
 .extra-list__information {
-  width: 100%;
+  width: 280px;
   margin-bottom: 14px;
 
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
+
+  border-collapse: collapse;
 }
 
 .extra-list__right-column {

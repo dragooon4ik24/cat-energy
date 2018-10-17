@@ -34,7 +34,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .extra-catalog .container {
+  .extra-catalog__wrapper {
     display: flex;
     justify-content: space-between;
   }

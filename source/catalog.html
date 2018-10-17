@@ -9,10 +9,10 @@
 </head>
 
 <body>
-  <header class="page-header">
+  <header class="page-header container">
     <a class="page-header__logo" href="index.html">Cat Energy</a>
-    <nav class="page-header__navigation main-navigation">
-      <button class="main-navigation__toggle" type="button">Открыть меню</button>
+    <nav class="page-header__navigation main-navigation main-navigation--closed main-navigation--nojs">
+      <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="main-navigation__list">
         <li class="main-navigation__item"><a class="main-navigation__link" href="index.html">Главная</a></li>
         <li class="main-navigation__item main-navigation__item--current"><a class="main-navigation__link main-navigation__link--current">Каталог продукции</a></li>
@@ -28,7 +28,7 @@
           <article class="product-list__article catalog-item">
             <figure class="catalog-item__figure">
               <a class="catalog-item__link" href="#">
-                <img src="http://placehold.it/150x100" width="150" height="100" alt="Упаковка Cat Energy Pro 500 г с курицей" class="catalog-item__image">
+                <img src="http://placehold.it/150x100" width="140" height="100" alt="Упаковка Cat Energy Pro 500 г с курицей" class="catalog-item__image">
               </a>
               <figcaption class="catalog-item__information">
                 <h3 class="catalog-item__title"><a href="#">Cat Energy Pro 500 г</a></h3>
@@ -54,7 +54,7 @@
         <li class="product-list__item">
           <article class="product-list__article catalog-item">
             <figure class="catalog-item__figure">
-              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="150" height="100" alt="Упаковка Cat Energy Pro 1000 г с курицей" class="catalog-item__image"></a>
+              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="140" height="100" alt="Упаковка Cat Energy Pro 1000 г с курицей" class="catalog-item__image"></a>
               <figcaption class="catalog-item__information">
                 <h3 class="catalog-item__title"><a href="#">Cat Energy Pro 1000 г</a></h3>
                 <table class="catalog-item__table">
@@ -79,7 +79,7 @@
         <li class="product-list__item">
           <article class="product-list__article catalog-item">
             <figure class="catalog-item__figure">
-              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="150" height="100" alt="Упаковка Cat Energy Pro 500 г с рыбой" class="catalog-item__image"></a>
+              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="140" height="100" alt="Упаковка Cat Energy Pro 500 г с рыбой" class="catalog-item__image"></a>
               <figcaption class="catalog-item__information">
                 <h3 class="catalog-item__title"><a href="#">Cat Energy Pro 500 г</a></h3>
                 <table class="catalog-item__table">
@@ -104,7 +104,7 @@
         <li class="product-list__item">
           <article class="product-list__article catalog-item">
             <figure class="catalog-item__figure">
-              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="150" height="100" alt="Упаковка Cat Energy Pro 1000 г с рыбой" class="catalog-item__image"></a>
+              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="140" height="100" alt="Упаковка Cat Energy Pro 1000 г с рыбой" class="catalog-item__image"></a>
               <figcaption class="catalog-item__information">
                 <h3 class="catalog-item__title"><a href="#">Cat Energy Pro 1000 г</a></h3>
                 <table class="catalog-item__table">
@@ -129,7 +129,7 @@
         <li class="product-list__item">
           <article class="product-list__article catalog-item">
             <figure class="catalog-item__figure">
-              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="150" height="100" alt="Упаковка Cat Energy Slim 500 г с гречкой" class="catalog-item__image"></a>
+              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="140" height="100" alt="Упаковка Cat Energy Slim 500 г с гречкой" class="catalog-item__image"></a>
               <figcaption class="catalog-item__information">
                 <h3 class="catalog-item__title"><a href="#">Cat Energy Slim 500 г</a></h3>
                 <table class="catalog-item__table">
@@ -154,7 +154,7 @@
         <li class="product-list__item">
           <article class="product-list__article catalog-item">
             <figure class="catalog-item__figure">
-              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="150" height="100" alt="Упаковка Cat Energy Slim 1000 г с гречкой" class="catalog-item__image"></a>
+              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="140" height="100" alt="Упаковка Cat Energy Slim 1000 г с гречкой" class="catalog-item__image"></a>
               <figcaption class="catalog-item__information">
                 <h3 class="catalog-item__title"><a href="#">Cat Energy Slim 1000 г</a></h3>
                 <table class="catalog-item__table">
@@ -179,7 +179,7 @@
         <li class="product-list__item">
           <article class="product-list__article catalog-item">
             <figure class="catalog-item__figure">
-              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="150" height="100" alt="Упаковка Cat Energy Slim 500 г с рисом" class="catalog-item__image"></a>
+              <a href="#" class="catalog-item__link"><img src="http://placehold.it/150x100" width="140" height="100" alt="Упаковка Cat Energy Slim 500 г с рисом" class="catalog-item__image"></a>
               <figcaption class="catalog-item__information">
                 <h3 class="catalog-item__title"><a href="#">Cat Energy Slim 500 г</a></h3>
                 <table class="catalog-item__table">
@@ -211,73 +211,77 @@
       </ul>
     </section>
     <section class="extra-catalog">
-      <h2 class="extra-catalog__title">Дополнительные товары</h2>
       <div class="container">
-        <ul class="extra-catalog__list extra-list">
-          <li class="extra-list__item">
-            <div class="extra-list__wrapper">
-              <p class="extra-list__name">Сахарозаменитель</p>
-              <table class="extra-list__information">
-                <tr>
-                  <td>1 упаковка (100 г)</td>
-                  <td class="extra-list__right-column">100 р.</td>
-                </tr>
-              </table>
-            </div>
-            <a href="#" class="extra-list__order site-button">Заказать</a>
-          </li>
-          <li class="extra-list__item">
-            <div class="extra-list__wrapper">
-              <p class="extra-list__name">Питьевая вода</p>
-              <table class="extra-list__information">
-                <tr>
-                  <td>5 литров</td>
-                  <td class="extra-list__right-column">50 р.</td>
-                </tr>
-              </table>
-            </div>
-            <a href="#" class="extra-list__order site-button">Заказать</a>
-          </li>
-          <li class="extra-list__item">
-            <div class="extra-list__wrapper">
-              <p class="extra-list__name">Молоко</p>
-              <table class="extra-list__information">
-                <tr>
-                  <td>1 литр</td>
-                  <td class="extra-list__right-column">100 р.</td>
-                </tr>
-              </table>
-            </div>
-            <a href="#" class="extra-list__order site-button">Заказать</a>
-          </li>
-          <li class="extra-list__item">
-            <div class="extra-list__wrapper">
-              <p class="extra-list__name">Витамины</p>
-              <table class="extra-list__information">
-                <tr>
-                  <td>1 упаковка (30г)</td>
-                  <td class="extra-list__right-column">300 р.</td>
-                </tr>
-              </table>
-            </div>
-            <a href="#" class="extra-list__order site-button">Заказать</a>
-          </li>
-        </ul>
-        <div class="extra-catalog__gift">
-          <p class="extra-catalog__case">Закажите все и получите чехол для кота в подарок!</p>
+        <h2 class="extra-catalog__title">Дополнительные товары</h2>
+        <div class="extra-catalog__wrapper">
+          <ul class="extra-catalog__list extra-list">
+            <li class="extra-list__item">
+              <div class="extra-list__wrapper">
+                <p class="extra-list__name">Сахарозаменитель</p>
+                <table class="extra-list__information">
+                  <tr>
+                    <td>1 упаковка (100 г)</td>
+                    <td class="extra-list__right-column">100 р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a href="#" class="extra-list__order site-button">Заказать</a>
+            </li>
+            <li class="extra-list__item">
+              <div class="extra-list__wrapper">
+                <p class="extra-list__name">Питьевая вода</p>
+                <table class="extra-list__information">
+                  <tr>
+                    <td>5 литров</td>
+                    <td class="extra-list__right-column">50 р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a href="#" class="extra-list__order site-button">Заказать</a>
+            </li>
+            <li class="extra-list__item">
+              <div class="extra-list__wrapper">
+                <p class="extra-list__name">Молоко</p>
+                <table class="extra-list__information">
+                  <tr>
+                    <td>1 литр</td>
+                    <td class="extra-list__right-column">100 р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a href="#" class="extra-list__order site-button">Заказать</a>
+            </li>
+            <li class="extra-list__item">
+              <div class="extra-list__wrapper">
+                <p class="extra-list__name">Витамины</p>
+                <table class="extra-list__information">
+                  <tr>
+                    <td>1 упаковка (30г)</td>
+                    <td class="extra-list__right-column">300 р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a href="#" class="extra-list__order site-button">Заказать</a>
+            </li>
+          </ul>
+          <div class="extra-catalog__gift">
+            <p class="extra-catalog__case">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__contacts contacts">
-      <div class="contacts__wrapper">
-        <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <div class="page-footer__contacts contacts contacts--white">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <p class="contacts__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
       <img class="contacts__map" src="http://placehold.it/150x100" width="150" height="100" alt="Карта с адресом: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
-      <div class="container">
+      <div class="page-footer__container container">
         <a class="page-footer__logo">Cat Energy</a>
         <ul class="page-footer__socials socials">
           <li class="socials__link"><a href="#">Вконтакте</a></li>
@@ -290,6 +294,7 @@
         </div>
       </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

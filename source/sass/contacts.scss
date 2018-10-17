@@ -24,19 +24,34 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
-  width: 280px;
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
-    width: 625px;
+    padding-left: 40px;
+    padding-right: 42px;
   }
 
   .contacts__address {
     width: 165px;
+
     text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts .container {
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    position: absolute;
+    left: auto;
+
+    width: 570px;
+  }
+
+  .contacts__address {
+    text-align: left;
   }
 }

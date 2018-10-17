@@ -1,9 +1,10 @@
 .catalog-item {
-  width: 100%;
+  width: 280px;
 }
 
 .catalog-item__figure {
   display: flex;
+  justify-content: space-between;
   margin: 0;
 }
 

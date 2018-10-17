@@ -34,12 +34,10 @@
   .main-header {
     position: relative;
 
+    padding-left: 90px;
+
     background-image: none;
     background-color: $white;
-  }
-
-  .main-header .container {
-    padding-left: 120px;
   }
 
   .main-header__title,
@@ -66,5 +64,11 @@
     bottom: 230px;
     box-sizing: border-box;
     width: 245px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    padding-left: 80px;
   }
 }
