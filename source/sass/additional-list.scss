@@ -1,3 +1,16 @@
+.additional-list {
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+.additional-list__item {
+  padding-left: 46px;
+
+  &:not(:last-child) {
+    margin-bottom: 23px;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .additional-list {
     display: flex;
@@ -6,10 +19,15 @@
   }
 
   .additional-list__item {
+    box-sizing: border-box;
+    padding-left: 58px;
+    padding-bottom: 25px;
     width: 285px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  width: 245px;
+  .additional-list__item {
+    width: 245px;
+  }
 }

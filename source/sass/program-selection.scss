@@ -1,20 +1,50 @@
+.program-selection {
+  margin-bottom: 30px;
+}
+
 .program-selection__title {
   @include title-style();
+  padding-top: 15px;
+  margin-bottom: 25px;
 }
 
 .program-selection__instruction {
   margin: 0;
-  padding-left: 41px;
+  margin-bottom: 38px;
+  width: 240px;
+
   text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
+  .program-selection {
+    margin-bottom: 52px;
+  }
+
+  .program-selection__title {
+    padding-top: 50px;
+    margin-bottom: 55px;
+  }
+
   .program-selection__instruction {
     padding-left: 41px;
+    margin-bottom: 65px;
+    width: 350px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .program-selection {
+    margin-bottom: 62px;
+  }
+
+  .program-selection__title {
+    padding-top: 68px;
+  }
+
   .program-selection__instruction {
     padding-left: 0;
   }

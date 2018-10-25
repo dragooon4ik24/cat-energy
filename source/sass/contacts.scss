@@ -15,6 +15,9 @@
 
 .contacts__address {
   width: 140px;
+}
+
+.contacts__address p {
   margin: 0;
 
   font-family: $secondary-font;
@@ -24,18 +27,37 @@
 .contacts__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 27px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
+    padding-top: 66px;
     padding-left: 40px;
     padding-right: 42px;
+    padding-bottom: 59px;
+  }
+
+  .contacts__text {
+    width: 172px;
+
+    font-size: 20px;
+    line-height: 25px;
   }
 
   .contacts__address {
+    margin-top: -3px;
     width: 165px;
+  }
 
+  .contacts__address p {
+    font-size: 16px;
     text-align: right;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -47,11 +69,21 @@
   .contacts__wrapper {
     position: absolute;
     left: auto;
+    top: 95px;
 
+    box-sizing: border-box;
     width: 570px;
+    padding-left: 76px;
+    padding-right: 79px;
+
+    background-color: $white;
   }
 
-  .contacts__address {
+  .contacts__address p {
     text-align: left;
+  }
+
+  .contacts__map {
+    margin-top: 200px;
   }
 }
