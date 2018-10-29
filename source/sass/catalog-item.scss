@@ -40,6 +40,10 @@
 }
 
 .catalog-item__second-column {
+  &--price {
+    text-transform: uppercase;
+  }
+
   text-align: right;
 }
 
