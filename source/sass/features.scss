@@ -1,10 +1,10 @@
 .features {
-  margin-bottom: 42px;
+  margin-bottom: 46px;
 }
 
 .features__title {
   @include title-style();
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .features__list {
@@ -12,31 +12,103 @@
 }
 
 .features__item {
+  position: relative;
+
   padding-left: 80px;
+  margin-bottom: 26px;
 
   font-family: $secondary-font;
 
-  &:not(:last-child) {
-    margin-bottom: 26px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $green;
   }
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    position: relative;
+
+    margin-bottom: -4px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 30px;
+      left: calc((100vw - 100%) / -2);
+
+      width: 100vw;
+      height: 1px;
+
+      background-color: $gray;
+    }
+  }
+
+  .features__title {
+    margin-bottom: 72px;
+  }
+
   .features__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    counter-reset: list;
   }
 
   .features__item {
     width: 245px;
     padding-left: 0;
     padding-right: 79px;
+    padding-top: 112px;
+    padding-bottom: 44px;
+    margin-bottom: 89px;
+
+    &::before {
+      top: 0;
+      left: 0;
+
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      counter-increment: list;
+      content: counter(list);
+      position: absolute;
+      top: -39px;
+      left: 113px;
+
+      font-size: 281px;
+      line-height: 281px;
+      font-family: $default-font;
+      color: $gray;
+
+      z-index: -1;
+    }
+
+    &:first-child::after {
+      left: 118px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    &::after {
+      content: none;
+    }
+  }
+
   .features__item {
     padding-right: 0;
+    margin-bottom: 30px;
   }
 }

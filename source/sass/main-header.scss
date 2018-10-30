@@ -8,10 +8,10 @@
 
 .main-header__title {
   margin: 0;
-  padding-top: 25px;
-  padding-right: 18px;
-  padding-left: 18px;
-  padding-bottom: 20px;
+  padding-top: 27px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 25px;
 
   font-size: 36px;
   font-weight: normal;
@@ -22,7 +22,7 @@
 
 .main-header__description {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 28px;
 
   line-height: 14px;
   text-align: center;
@@ -30,10 +30,18 @@
   color: $white;
 }
 
+.main-header__button {
+  padding-top: 12px;
+  padding-bottom: 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
 @media (min-width: $tablet-width) {
   .main-header {
-    position: relative;
-
+    display: flex;
+    flex-direction: column;
     padding-left: 90px;
 
     background-image: none;
@@ -49,26 +57,51 @@
   .main-header__title {
     width: 430px;
     padding-left: 0;
+    padding-top: 50px;
+    margin-bottom: 17px;
 
     font-size: 60px;
     line-height: 60px;
   }
 
   .main-header__description {
+    margin-bottom: 19px;
+
     font-size: 20px;
     line-height: 20px;
   }
 
+  .main-header__image {
+    order: 1;
+    margin-top: -15px;
+
+    z-index: 1;
+  }
+
   .main-header__button {
-    position: absolute;
-    bottom: 230px;
     box-sizing: border-box;
+    padding-top: 16px;
     width: 245px;
+    height: 52px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    z-index: 2;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
     padding-left: 80px;
+    padding-top: 50px;
+  }
+
+  .main-header__description {
+    margin-bottom: 25px;
+  }
+
+  .main-header__image {
+    margin-top: -25px;
   }
 }

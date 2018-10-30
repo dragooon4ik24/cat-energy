@@ -1,5 +1,5 @@
 .extra-catalog {
-  margin-bottom: 35px;
+  margin-bottom: 39px;
 }
 
 .extra-catalog__list {
@@ -7,12 +7,30 @@
 }
 
 .extra-catalog__title {
+  display: flex;
+  align-items: center;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
+
+  &::after {
+    content: "";
+    top: 0;
+    left: 0;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin-top: 7px;
+    margin-left: 24px;
+    margin-right: calc((100vw - 100%) / -2);
+    width: 50px;
+    height: 3px;
+
+    background-color: $green;
+  }
 }
 
 .extra-catalog__gift {
@@ -24,18 +42,90 @@
 }
 
 .extra-catalog__case {
-  margin: 0;
-  padding-top: 190px;
+  margin: 0 auto;
+  padding-top: 187px;
+  width: 161px;
 
   font-family: $secondary-font;
+  font-size: 16px;
   line-height: 20px;
   text-align: center;
   color: $white;
 }
 
+@media (min-width: $tablet-width) {
+  .extra-catalog {
+    margin-bottom: 76px;
+  }
+
+  .extra-catalog__list {
+    margin-bottom: 70px;
+  }
+
+  .extra-catalog__title {
+    position: relative;
+
+    padding-left: 37px;
+    margin-bottom: 79px;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    &::after {
+      margin-top: 8px;
+      margin-left: 36px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: calc(50% + 3px);
+      left: calc((100vw - 100%) / -2);
+
+      width: calc((100vw - 100%) / 2);
+      height: 3px;
+
+      background-color: $green;
+    }
+  }
+
+  .extra-catalog__case {
+    padding-top: 72px;
+    margin-right: 123px;
+
+    text-align: left;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .extra-catalog {
+    margin-bottom: 87px;
+  }
+
+  .extra-catalog__title {
+    padding-left: 0;
+
+    &::before {
+      width: calc(((100vw - 100%) / 2) - 40px);
+    }
+  }
+
   .extra-catalog__wrapper {
     display: flex;
     justify-content: space-between;
+  }
+
+  .extra-catalog__list {
+    margin-bottom: 0;
+  }
+
+  .extra-catalog__gift {
+    min-width: 245px;
+  }
+
+  .extra-catalog__case {
+    margin-right: auto;
+    padding-top: 188px;
+    text-align: center;
   }
 }
