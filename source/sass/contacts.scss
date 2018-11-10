@@ -31,6 +31,11 @@
   padding-bottom: 27px;
 }
 
+.contacts__map {
+  display: block;
+  margin: 0 auto;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     padding-top: 66px;
@@ -59,6 +64,11 @@
       margin-bottom: 20px;
     }
   }
+
+  .contacts__map {
+    width: 767px;
+    height: 400px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -84,6 +94,7 @@
   }
 
   .contacts__map {
-    margin-top: 200px;
+    width: 1440px;
+    height: 400px;
   }
 }

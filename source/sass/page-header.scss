@@ -6,7 +6,6 @@
   position: relative;
 
   display: block;
-  padding-bottom: 20px;
 
   &::after {
     content: "";
@@ -19,6 +18,22 @@
 
     background-color: $border-color--menu;
   }
+
+  &[href]:hover {
+    opacity: 0.8;
+  }
+
+  &[href]:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo-image {
+  display: block;
+  padding-top: 6px;
+  padding-bottom: 14px;
+  width: 190px;
+  height: auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,5 +46,16 @@
     &::after {
       content: none;
     }
+  }
+
+  .page-header__logo-image {
+    width: 173px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__logo-image {
+    padding-top: 3px;
+    width: 202px;
   }
 }

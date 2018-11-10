@@ -1,5 +1,5 @@
 .extra-catalog {
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 }
 
 .extra-catalog__list {
@@ -34,11 +34,31 @@
 }
 
 .extra-catalog__gift {
+  position: relative;
+
   min-height: 289px;
 
   background-color: $green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 280px auto;
+
+  @media (min-resolution: $retina-dpi) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 55px;
+    height: 60px;
+
+    background: url("../img/icon-gift.svg") 0 0 no-repeat;
+  }
 }
 
 .extra-catalog__case {
@@ -86,6 +106,17 @@
       height: 3px;
 
       background-color: $green;
+    }
+  }
+
+  .extra-catalog__gift {
+    min-height: 200px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: 708px 200px;
+
+    &::before {
+      left: 120px;
     }
   }
 

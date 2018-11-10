@@ -5,6 +5,13 @@
   padding-right: 20px;
 }
 
+@media (max-width: $mobile-width-only) {
+  .container--page-main {
+    width: 320px;
+    margin: 0 auto;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .container {
     width: 708px;
