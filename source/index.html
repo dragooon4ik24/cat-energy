@@ -6,9 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/svgxuse.js"></script>
+  <script src="js/picturefill.js"></script>
 </head>
 
 <body class="page-body">
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header container">
     <a class="page-header__logo">
       <picture>
@@ -32,8 +37,8 @@
         <h1 class="main-header__title">Функциональное питание для котов</h1>
         <p class="main-header__description">Занялся собой? Займись котом!</p>
         <picture class="main-header__picture">
-          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg">
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png, img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg, img/index-can-tablet@2x.jpg 2x">
           <img class="main-header__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-desktop@2x.png 2x" width="280" height="271" alt="Корм для кота">
         </picture>
           <a href="form.html" class="main-header__button site-button">Подобрать программу</a>
@@ -116,7 +121,7 @@
           </div>
         </div>
       </div>
-      <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/-/CBFEzUxNcD" width="100%" height="400" allowfullscreen="true"></iframe>
+      <iframe class="contacts__iframe" src="https://yandex.ru/map-widget/v1/-/CBFEzUxNcD"></iframe>
     </div>
     <div class="page-footer__container container">
       <a class="page-footer__logo">
@@ -126,21 +131,21 @@
         <li class="socials__link">
           <a href="#">
               <svg class="socials__icon socials__icon--vk" width="22" height="12">
-                <use xlink:href="sprite.svg#vk-mobile"></use>
+                <use xlink:href="img/sprite.svg#icon-vk-mobile"></use>
               </svg>
             </a>
         </li>
         <li class="socials__link">
           <a href="#">
               <svg class="socials__icon socials__icon--insta" width="16" height="16">
-                <use xlink:href="sprite.svg#insta-mobile"></use>
+                <use xlink:href="img/sprite.svg#icon-insta-mobile"></use>
               </svg>
             </a>
         </li>
         <li class="socials__link">
           <a href="#">
               <svg class="socials__icon socials__icon--fb" width="10" height="19">
-                <use xlink:href="sprite.svg#fb-mobile"></use>
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>
         </li>
@@ -149,13 +154,12 @@
         <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
             <svg class="socials__icon" width="41" height="41">
-                <use xlink:href="sprite.svg#htmlacademy"></use>
+                <use xlink:href="img/sprite.svg#htmlacademy"></use>
               </svg>
           </a>
       </div>
     </div>
   </footer>
-  <script src="js/svgxuse.js" defer></script>
   <script src="js/script.js"></script>
 </body>
 

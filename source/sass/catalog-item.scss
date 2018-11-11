@@ -109,6 +109,7 @@
       padding-top: 163px;
 
       background-image: linear-gradient(to bottom, white);
+      background-color: $white;
       border: 1px solid $border-color;
 
       &::before {
@@ -126,12 +127,12 @@
     margin-bottom: 17px;
     margin-left: -38px;
     width: 324px;
-    height: 172px;
+    height: auto;
 
     &--big {
       margin-top: 17px;
       width: 324px;
-      height: 208px;
+      height: auto;
     }
   }
 
@@ -191,11 +192,11 @@
 
   .catalog-item__image {
     width: 245px;
-    height: 172px;
+    height: auto;
 
     &--big {
       width: 245px;
-      height: 208px;
+      height: auto;
     }
   }
 }
