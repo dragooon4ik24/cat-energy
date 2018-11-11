@@ -102,14 +102,22 @@
     padding-left: 38px;
     padding-right: 37px;
 
-    background-color: $gray;
+    background-image: linear-gradient(to bottom, white 100px, $gray 100px);
 
     &--show-more {
       margin-top: 100px;
       padding-top: 163px;
 
-      background-color: $white;
+      background-image: linear-gradient(to bottom, white);
       border: 1px solid $border-color;
+
+      &::before {
+        width: 60px;
+        height: 60px;
+        top: 53px;
+
+        background: url("../img/icon-plus.svg");
+      }
     }
   }
 
@@ -179,5 +187,15 @@
 @media (min-width: $desktop-width) {
   .catalog-item {
     width: 245px;
+  }
+
+  .catalog-item__image {
+    width: 245px;
+    height: 172px;
+
+    &--big {
+      width: 245px;
+      height: 208px;
+    }
   }
 }

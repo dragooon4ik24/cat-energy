@@ -117,6 +117,16 @@
 
     background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
   }
+
+  &:hover {
+    &::after {
+      right: -44px;
+
+      width: 33px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

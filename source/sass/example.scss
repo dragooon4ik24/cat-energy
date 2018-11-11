@@ -99,7 +99,7 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    background-color: $white;
+    background-image: linear-gradient(to bottom, white 593px, transparent 593px), linear-gradient(to right, $gray 50%, $gray--darker 50%);
   }
 
   .example__title {
@@ -167,8 +167,6 @@
 
   .example__wrapper-changes {
     padding-bottom: 68px;
-
-    background-color: $gray;
   }
 
   .example__image {
@@ -187,7 +185,7 @@
 
 @media (min-width: $desktop-width) {
   .example {
-    background-color: $gray;
+    background-image: linear-gradient(to bottom, white 190px, transparent 190px), linear-gradient(to right, $gray 67%, $gray--darker 67%);
   }
 
   .example__title {

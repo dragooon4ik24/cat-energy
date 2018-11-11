@@ -70,3 +70,9 @@
     margin-bottom: 41px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .product-list__article {
+    margin-bottom: 44px;
+  }
+}

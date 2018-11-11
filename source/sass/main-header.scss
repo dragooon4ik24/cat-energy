@@ -85,7 +85,7 @@
     line-height: 20px;
   }
 
-  .main-header picture {
+  .main-header__picture {
     order: 1;
   }
 
@@ -118,6 +118,7 @@
     padding-left: 80px;
     padding-top: 50px;
     margin-bottom: 80px;
+    background-color: transparent;
   }
 
   .main-header__description {
