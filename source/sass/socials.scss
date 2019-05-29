@@ -2,6 +2,63 @@
   @include list-style-reset();
 
   display: flex;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 24px;
+  padding-bottom: 16px;
+  margin-left: 73px;
+}
+
+.socials__link {
+  &:nth-child(2) {
+    margin-left: 37px;
+  }
+
+  &:nth-child(3) {
+    margin-left: 40px;
+  }
+}
+
+.socials__icon {
+  fill: $socials-color;
+
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    padding-top: 29px;
+    margin-left: 16px;
+  }
+
+  .socials__icon {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--insta {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
+
+  .socials__link {
+    &:nth-child(2) {
+      margin-left: 28px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 28px;
+    }
+  }
 }

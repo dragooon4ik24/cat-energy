@@ -3,6 +3,8 @@
 }
 
 .list-program__item {
+  position: relative;
+
   padding-left: 20px;
   padding-right: 20px;
 
@@ -10,6 +12,47 @@
 
   &:not(:last-child) {
     margin-bottom: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 22px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $green;
+    border-radius: 50%;
+  }
+
+  &--slim {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 22px;
+      left: 30px;
+
+      width: 35px;
+      height: 49px;
+
+      background: url("../img/icon-cat-slim.svg") no-repeat 0 0;
+    }
+  }
+
+  &--gain {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 13px;
+
+      width: 67px;
+      height: 28px;
+
+      background: url("../img/icon-cat-pro.svg") no-repeat 0 0;
+    }
   }
 }
 
@@ -48,16 +91,41 @@
 }
 
 .list-program__link {
-  display: block;
+  position: relative;
+
+  display: inline-block;
   padding-top: 20px;
   padding-bottom: 21px;
 
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  vertical-align: top;
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: -35px;
+
+    width: 24px;
+    height: 11px;
+
+    background: url("../img/icon-right-arrow-long.svg") no-repeat 0 0;
+  }
+
+  &:hover {
+    &::after {
+      right: -44px;
+
+      width: 33px;
+
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+    }
   }
 }
 
@@ -68,6 +136,35 @@
 
     &:not(:last-child) {
       margin-bottom: 30px;
+    }
+
+    &::before {
+      top: 92px;
+      left: 445px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim {
+      &::after {
+        left: 475px;
+        top: 80px;
+
+        width: 140px;
+        height: 194px;
+      }
+    }
+
+
+    &--gain {
+      &::after {
+        left: 410px;
+        top: 135px;
+
+        width: 268px;
+        height: 112px;
+      }
     }
   }
 
@@ -100,6 +197,11 @@
 
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      top: 25px;
+      right: -47px;
+    }
   }
 }
 
@@ -115,6 +217,35 @@
 
     &:not(:last-child) {
       margin-bottom: 0;
+    }
+
+    &::before {
+      top: 47px;
+      left: 52px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim {
+      &::after {
+        left: 66px;
+        top: 41px;
+
+        width: 70px;
+        height: 97px;
+      }
+    }
+
+
+    &--gain {
+      &::after {
+        left: 34px;
+        top: 69px;
+
+        width: 134px;
+        height: 56px;
+      }
     }
   }
 

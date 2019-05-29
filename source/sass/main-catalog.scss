@@ -10,18 +10,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-catalog {
+    margin-bottom: 27px;
+  }
+
   .main-catalog__title {
-    padding-top: 50px;
+    padding-top: 45px;
     margin-bottom: 65px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-catalog__title {
-    padding-top: 68px;
+    padding-top: 61px;
+    margin-bottom: 66px;
   }
 
   .main-catalog {
-    margin-bottom: 37px;
+    margin-bottom: 32px;
   }
 }

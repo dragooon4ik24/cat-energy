@@ -1,17 +1,39 @@
 .catalog-item {
-  padding-top: 21px;
   width: 280px;
 
   &--show-more {
+    position: relative;
+
     padding-top: 79px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 26px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      width: 30px;
+      height: 30px;
+
+      background: url("../img/icon-plus-mobile.svg") 0 0 no-repeat;
+      opacity: 0.2;
+    }
   }
+}
+
+.catalog-item__image {
+  display: block;
+}
+
+.catalog-item__information {
+  padding-top: 21px;
 }
 
 .catalog-item__figure {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 20px;
 }
 
 .catalog-item__title {
@@ -75,38 +97,58 @@
   .catalog-item {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
     box-sizing: border-box;
     width: 324px;
-    padding-top: 125px;
     padding-left: 38px;
     padding-right: 37px;
 
-    background-color: $gray;
+    background-image: linear-gradient(to bottom, white 100px, $gray 100px);
 
     &--show-more {
       margin-top: 100px;
       padding-top: 163px;
 
+      background-image: linear-gradient(to bottom, $white);
       background-color: $white;
       border: 1px solid $border-color;
+
+      &::before {
+        width: 60px;
+        height: 60px;
+        top: 53px;
+
+        background: url("../img/icon-plus.svg");
+      }
     }
   }
 
   .catalog-item__image {
-    margin-bottom: 34px;
+    margin-bottom: 30px;
+    margin-left: -38px;
+    width: 324px;
+    height: auto;
+
+    &--big {
+      margin-top: 0;
+      width: 324px;
+      height: auto;
+    }
   }
 
   .catalog-item__order {
-    margin-top: auto;
     margin-bottom: 40px;
   }
 
   .catalog-item__figure {
+    margin-top: auto;
     flex-direction: column;
     margin-bottom: 33px;
   }
 
   .catalog-item__table {
+    margin-top: auto;
     width: 100%;
 
     font-size: 16px;
@@ -145,8 +187,22 @@
   }
 }
 
+//.catalog-item__link {
+//  min-height: 100px;
+//}
+
 @media (min-width: $desktop-width) {
   .catalog-item {
     width: 245px;
+  }
+
+  .catalog-item__image {
+    width: 245px;
+    height: auto;
+
+    &--big {
+      width: 245px;
+      height: auto;
+    }
   }
 }

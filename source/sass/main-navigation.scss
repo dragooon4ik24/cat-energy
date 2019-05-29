@@ -1,6 +1,6 @@
 .main-navigation__toggle {
   position: absolute;
-  top: 0;
+  top: 5px;
   right: 10px;
 
   display: block;
@@ -146,5 +146,15 @@
 @media (min-width: $desktop-width) {
   .main-navigation__list {
     font-size: 20px;
+  }
+
+  .page-body .main-navigation__link {
+    color: $white;
+
+    &--current {
+      &::after {
+        background-color: $white;
+      }
+    }
   }
 }

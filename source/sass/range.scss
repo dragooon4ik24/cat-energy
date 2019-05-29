@@ -50,6 +50,24 @@
 
     font-size: 20px;
     border-bottom: 1px dotted $border-color--dotted;
+
+    &:hover {
+      border-bottom: 1px solid $border-color--dotted;
+
+      cursor: pointer;
+    }
+  }
+
+  .range__before {
+    &:active {
+      border-bottom: 1px solid $gray;
+    }
+  }
+
+  .range__after {
+    &:active {
+      border-bottom: 1px solid $gray--darker;
+    }
   }
 
   .range__scale {
