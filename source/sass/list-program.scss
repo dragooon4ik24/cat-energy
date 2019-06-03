@@ -202,6 +202,12 @@
       top: 25px;
       right: -47px;
     }
+
+    &:hover {
+      &::after {
+        right: -56px;
+      }
+    }
   }
 }
 

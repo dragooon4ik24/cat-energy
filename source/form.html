@@ -7,7 +7,7 @@
   <title>Cat Energy: Подбор программы</title>
   <link rel="stylesheet" href="css/style.min.css">
   <script src="js/svgxuse.js"></script>
-  <script src="js/picturefill.js"></script>
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
         <p class="program-selection__instruction">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="program-selection__form form" action="https://echo.htmlacademy.ru">
           <div class="container-form">
-            <fieldset class="form__fieldset form__fieldset--data">
+            <div class="form__fieldset form__fieldset--data">
               <p class="form__wrapper">
                 <label class="form__label" for="cat-name">Имя:*</label>
                 <input class="form__input-text" type="text" name="name" id="cat-name" placeholder="Барсик">
@@ -51,8 +51,8 @@
                 <label class="form__label" for="cat-age">Возраст (лет):</label>
                 <input class="form__input-text" type="text" name="age" id="cat-age" placeholder="7">
               </p>
-            </fieldset>
-            <fieldset class="form__fieldset form__fieldset--weight">
+            </div>
+            <div class="form__fieldset form__fieldset--weight">
               <ul class="form__list-weight">
                 <li>
                   <input class="form__radio visually-hidden" type="radio" name="changing-weight" id="lose-weight" value="lose-weight" checked="">
@@ -67,10 +67,10 @@
                   <label class="form__label" for="need-advice">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
-            </fieldset>
+            </div>
           </div>
-          <fieldset class="form__fieldset form__fieldset--contacts">
-            <legend class="form__legend">Контактные данные (владельца кота)</legend>
+          <div class="form__fieldset form__fieldset--contacts">
+            <p class="form__legend form__legend--contacts"><span class="form__legend--span">Контактные данные (владельца&nbsp;кота)</span></p>
             <div class="container-form">
               <p class="form__wrapper">
                 <label class="form__label" for="user-email">E-mail:*</label>
@@ -87,13 +87,13 @@
                 </svg>
               </p>
             </div>
-          </fieldset>
+          </div>
           <fieldset class="form__fieldset form__fieldset--comment">
-            <legend class="form__legend">Комментарий</legend>
+            <p class="form__legend green-stripe">Комментарий</p>
             <textarea class="form__textarea" name="comment" id="user-comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--extra">
-            <legend class="form__legend">Дополнительно</legend>
+            <p class="form__legend green-stripe">Дополнительно</p>
             <ul class="form__list-extra additional-list">
               <li class="additional-list__item">
                 <input type="checkbox" name="sugar-substitute" id="sugar-substitute" class="form__checkbox visually-hidden" checked="">
