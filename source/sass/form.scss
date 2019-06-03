@@ -134,10 +134,43 @@
 }
 
 .form__legend {
+  position: relative;
+
+  margin: 0;
   margin-bottom: 33px;
 
   font-size: 24px;
   line-height: 24px;
+
+  &--span {
+    position: relative;
+    padding-right: 20px;
+    max-width: 181px;
+
+    background-color: #ffffff;
+    z-index: 10;
+  }
+}
+
+.form__legend--contacts {
+  display: flex;
+  width: 100%;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    margin-top: 12px;
+
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100vw;
+    height: 3px;
+
+    background-color: $green;
+    z-index: 1;
+  }
 }
 
 .form__list-extra {
@@ -282,6 +315,7 @@ input[type="radio"] {
     margin-right: 17px;
   }
 
+
   .form__input-text,
   .form__textarea {
     padding-top: 11px;
@@ -303,6 +337,9 @@ input[type="radio"] {
   .form__fieldset {
     &--data {
       margin-bottom: 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &--weight {
@@ -360,7 +397,7 @@ input[type="radio"] {
   .form__input-text,
   .form__textarea {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 30px;
   }
 
   .form__fieldset--contacts .form__label {
@@ -372,6 +409,19 @@ input[type="radio"] {
 
     font-size: 36px;
     line-height: 36px;
+
+    &--span {
+      display: inline-block;
+      max-width: 530px;
+      padding-left: 37px;
+      padding-right: 37px;
+      margin-left: -37px;
+    }
+
+    &::after {
+      top: 7px;
+      left: calc((100vw - 100%) / -2);
+    }
   }
 
   .form__fieldset--extra .form__legend {
@@ -472,5 +522,11 @@ input[type="radio"] {
   .form__submit {
     margin-right: 83px;
     width: 568px;
+  }
+
+  .form__legend {
+    &--span {
+      padding-right: 40px;
+    }
   }
 }
