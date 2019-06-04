@@ -92,5 +92,20 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
+gulp.task("copyForGithubPages", function () {
+  return gulp.src([
+    "build/**"
+  ],{
+    base: "build"
+  })
+    .pipe(gulp.dest("./"));
+});
+
+
+gulp.task("cleanGithubPages", function () {
+  return del(["./img", "./css", "./fonts", "./js", "./*.html"]);
+});
+
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
+// gulp.task("start", gulp.series("build", "cleanGithubPages", "copyForGithubPages", "clean"));
